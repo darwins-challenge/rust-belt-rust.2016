@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Fly me to the moon",
+    "packageVersion": "1.0.0",
+    "revealTheme": "moon",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "darwins-challenge",
+    "githubRepository": "rust-belt-rust.2016"
+  }
+}
