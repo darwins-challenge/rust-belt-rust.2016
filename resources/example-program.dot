@@ -1,0 +1,19 @@
+digraph G {
+    node [fontname=Helvetica];
+    edge [fontname=Helvetica];
+
+    if -> "<" [ label=cond ];
+    "<" -> Vy;
+    "<" -> -3.0;
+    if -> "Thrust" [ label=" then" ];
+    if2 [ label="if" ];
+    if -> if2 [ label=else ];
+    if2 -> ">" [ label=cond ];
+    ">" -> O;
+    ">" -> 0.0;
+    if2 -> Right [ label=" then" ];
+    if2 -> Skip [ label=else ];
+
+    Thrust, Right, Skip [ fontcolor="red", fontname="helvetica bold" ];
+    Vy, O [ fontcolor="blue", fontname="Helvetica bold" ];
+}
