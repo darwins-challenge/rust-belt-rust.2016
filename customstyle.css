@@ -2,3 +2,14 @@ em {
     color: #FF9524;
     font-style: normal !important;
 }
+
+.noborder {
+  background:none !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+.xlarge {
+    margin: 0 0 !important;
+    max-height: 99% !important;
+}
