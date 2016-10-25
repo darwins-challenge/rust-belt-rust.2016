@@ -5,11 +5,14 @@
     "screeny.html",
     "principle.md",
     "representation.md",
+    "sensors.md",
     "grammar.md",
+    "genetic_ops.md",
     "genetic.md",
     "selection.md",
     "badfitness.md",
     "smoothfitness.md",
     "parameters.md",
-    "projects.md"
+    "projects.md",
+    "gettoit.html"
 ]
