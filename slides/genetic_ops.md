@@ -1,4 +1,4 @@
-## Genetic Operations
+## Better child?
 
 * _Reproduce_
 * _Mutate_

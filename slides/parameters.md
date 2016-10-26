@@ -6,4 +6,3 @@
 * _Tournament_ size
 * _Depth_ of program trees
 * Chances of _reproduction_, _mutation_, _crossover_
-* Genetic _operations_

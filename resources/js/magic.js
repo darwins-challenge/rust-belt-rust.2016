@@ -23,3 +23,13 @@ $(function() {
         schedule();
     }, false);
 });
+
+$(function() {
+    var game = null;
+    Reveal.addEventListener('thegame', function() {
+        if (!game)
+            game = startTheGame();
+        else
+            game.resetModel();
+    }, false);
+});

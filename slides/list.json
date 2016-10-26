@@ -2,20 +2,29 @@
     "title.md",
     "introduction.md",
     "flowchart.md",
-    "screeny.html",
+    {
+        "filename": "thegame.html",
+        "attr": {
+            "data-state": "thegame"
+        }
+    },
     "principle.md",
-    "representation.md",
-    "sensors.md",
+    "representation.html",
     "grammar.md",
+    "sensors.md",
+    {
+        "filename": "fitness.html",
+        "attr": {
+            "data-state": "fitness"
+        }
+    },
+    "genetic_overview.html",
     "genetic_ops.md",
-    { "filename": "fitness.html", "attr": { "data-state": "fitness"}},
-    "genetic.md",
-    "selection.md",
     "badfitness.md",
     "smoothfitness.md",
     "parameters.md",
+    "projects.md",
     "scenario1.html",
     "scenario3.html",
-    "projects.md",
     "gettoit.html"
 ]
