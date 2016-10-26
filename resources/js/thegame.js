@@ -30,10 +30,21 @@ function startTheGame() {
         console.log(code);
         pressed[code] = true;
 
+        if (code == 219 || code == 221 || code == 9) {
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
     }, true);
     document.body.addEventListener('keyup', function(event){
         var code = event.keyCode;
         pressed[code] = false;
+
+        if (code == 219 || code == 221 || code == 9) {
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
     }, true);
 
     function control(commandpanel){
@@ -68,10 +79,8 @@ function startTheGame() {
         model.lander.landed = moonLander.landed;
         model.lander.fuel = moonLander.fuel;
         model.lander.thrusting = moonLander.thrusting;
-        if (moonLander.crashed) {
-            model.lander.hit_ground = true;
-            model.lander.crash_speed = true;
-        }
+        model.lander.hit_ground = moonLander.crashed;
+        model.lander.crash_speed = moonLander.crashed;
     }
 
 
