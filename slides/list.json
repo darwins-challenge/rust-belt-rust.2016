@@ -8,11 +8,14 @@
     "sensors.md",
     "grammar.md",
     "genetic_ops.md",
+    { "filename": "fitness.html", "attr": { "data-state": "fitness"}},
     "genetic.md",
     "selection.md",
     "badfitness.md",
     "smoothfitness.md",
     "parameters.md",
+    "scenario1.html",
+    "scenario3.html",
     "projects.md",
     "gettoit.html"
 ]
