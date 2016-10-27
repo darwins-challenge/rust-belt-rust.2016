@@ -1,23 +1,20 @@
 digraph G {
-    node [fontname=helvetica, shape=rectangle];
-    edge [fontname=helvetica, fontsize=10];
-    graph [splines=ortho, nodesep=1];
+    node [fontname=helvetica, fontsize=18, shape=rectangle, color="white", fontcolor="white", penwidth=2.0, margin="0.31,0.055", fillcolor="black", style="filled"];
+    edge [fontname=helvetica, fontsize=10, color="white", fontcolor="white", penwidth=2.0];
+    graph [splines=ortho, nodesep=1, bgcolor="transparent", fontcolor="white"];
 
-    "generate random population" -> good;
+    random [label="generate random population"];
+    random -> calc_fitness;
 
-    good [label="until result good enough"];
-    good -> "calculate fitness of population" -> branch
-    branch [label="until new generation full"];
+    calc_fitness [label="calculate fitness of population"];
+    calc_fitness -> good;
 
-    branch -> repro [xlabel=<P<sub>repro</sub>>]; repro [label="copy random parent\n\n(reproduce)"];
-    branch -> mutate [xlabel=<P<sub>mutate</sub>>]; mutate [label="copy and mutate random parent\n\n(mutate)"];
-    branch -> crossover [xlabel=<P<sub>crossover</sub>>]; crossover [label="combine 2 random parents\n\n(crossover)"];
+    good [shape="hexagon", label="result good enough?"];
+    good -> insert [xlabel="no"];
 
-    repro -> insert;
-    mutate -> insert;
-    crossover -> insert;
-    insert [label="add children to new generation"];
+    insert [label="generate better child into new generation"];
+    insert -> branch;
 
-    insert -> branch [weight=0];
-    branch -> good [weight=0];
+    branch [shape="hexagon", label="new generation full?"];
+    branch -> calc_fitness [weight=0,xlabel="no"];
 }

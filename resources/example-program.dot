@@ -1,7 +1,9 @@
 digraph G {
-    node [fontname=Helvetica];
-    edge [fontname=Helvetica];
+    node [fontname=helvetica, fontsize=18, color="white", fontcolor="white", penwidth=2.0, margin="0.31,0.055", fillcolor="#222222", style="filled"];
+    edge [fontname=helvetica, fontsize=10, color="white", fontcolor="white", penwidth=2.0];
+    graph [bgcolor="transparent", fontcolor="white"];
 
+    if;
     if -> "<" [ label=cond ];
     "<" -> Vy;
     "<" -> -3.0;
@@ -9,11 +11,17 @@ digraph G {
     if2 [ label="if" ];
     if -> if2 [ label=else ];
     if2 -> ">" [ label=cond ];
-    ">" -> O;
+    ">" -> "+";
+    "+" -> O;
+    "+" -> 3.14;
     ">" -> 0.0;
     if2 -> Right [ label=" then" ];
     if2 -> Skip [ label=else ];
 
-    Thrust, Right, Skip [ fontcolor="red", fontname="helvetica bold" ];
-    Vy, O [ fontcolor="blue", fontname="Helvetica bold" ];
+
+    if, if2 [ fontcolor="#CCB51D", fontname="helvetica bold" ];
+    ">", "<" [ fontcolor="#2BCC1D", fontname="helvetica bold" ];
+    "+" [ fontcolor="#D44424", fontname="helvetica bold" ];
+    Thrust, Right, Skip [ fontcolor="#F78C00" ];
+    Vy, O [ fontcolor="#7AA9FF" ];
 }
