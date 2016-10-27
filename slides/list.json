@@ -9,20 +9,27 @@
         }
     },
     "principle.md",
+    "_representation.md",
     "representation.html",
     "grammar.md",
+    "_evaluating.md",
     "sensors.md",
+    "_fitness.md",
     {
         "filename": "fitness.html",
         "attr": {
             "data-state": "fitness"
         }
     },
+    "_genetics.md",
     "genetic_overview.html",
     "genetic_ops.md",
+    "mutation.html",
+    "crossover.html",
     "badfitness.md",
     "smoothfitness.md",
     "parameters.md",
+    "_workshop.md",
     "projects.md",
     "scenario1.html",
     "scenario3.html",

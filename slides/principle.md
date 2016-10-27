@@ -1,4 +1,4 @@
-## The output
+## The idea
 
 We're _searching_ for a _computer program_.
 

@@ -1,0 +1,21 @@
+digraph G {
+    node [fontname=helvetica, fontsize=18, color="white", fontcolor="white", penwidth=2.0, margin="0.31,0.055", fillcolor="#222222", style="filled"];
+    edge [fontname=helvetica, fontsize=10, color="white", fontcolor="white", penwidth=2.0];
+    graph [bgcolor="transparent", fontcolor="white"];
+
+    if;
+    if -> ">" [ label=cond ];
+    ">" -> "*";
+    "*" -> 1.0;
+    "*" -> 2.5;
+    ">" -> X;
+
+    if -> "Skip" [ label=then ];
+    if -> "Left" [ label=else ];
+
+    if [ fontcolor="#CCB51D", fontname="helvetica bold" ];
+    ">" [ fontcolor="#2BCC1D", fontname="helvetica bold" ];
+    "*" [ fontcolor="#D44424", fontname="helvetica bold" ];
+    Skip, Left [ fontcolor="#F78C00" ];
+    X [ fontcolor="#7AA9FF" ];
+}
