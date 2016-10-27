@@ -17,3 +17,10 @@ EXPRESSION := SENSOR
 
 SENSOR := x | y | vx | vy | o | fuel | ...
 ```
+
+
+note:
+    <p>A grammar describes the complete space of
+    programs that we can generate.</p>
+
+    <p>Imperative vs functional</p>

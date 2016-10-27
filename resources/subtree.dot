@@ -1,0 +1,13 @@
+digraph G {
+    node [fontname=helvetica, fontsize=18, color="white", fontcolor="white", penwidth=2.0, margin="0.31,0.055", fillcolor="#222222", style="filled"];
+    edge [fontname=helvetica, fontsize=10, color="white", fontcolor="white", penwidth=2.0];
+    graph [bgcolor="transparent", fontcolor="white"];
+
+    "==";
+    "==" -> X;
+    "==" -> 5.0;
+
+
+    "==" [ fontcolor="#2BCC1D", fontname="helvetica bold" ];
+    X [ fontcolor="#7AA9FF" ];
+}
