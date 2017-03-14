@@ -60,7 +60,11 @@ function startTheGame() {
             console.log('thrusting');
             commandpanel.do.thruster();
         }
-    }
+        if (pressed[81]) { // q
+            console.log('resetting');
+            resetModel();
+        }
+   }
 
     var simulationOptions = {
         gravity: new lander.vector.Vector(0, -0.01),
