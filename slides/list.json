@@ -1,7 +1,6 @@
 [
     "title.md",
     "introduction.md",
-    "flowchart.md",
     {
         "filename": "thegame.html",
         "attr": {
@@ -28,12 +27,13 @@
     "crossover.html",
     "badfitness.md",
     "smoothfitness.md",
-    "thought-experiment.md",
     "parameters.md",
     "_workshop.md",
     "projects.md",
-    "demo.md",
     "scenario1.html",
     "scenario3.html",
+    "thought-experiment.md",
+    "thought-experiment-1.md",
+    "thought-experiment-2.md",
     "gettoit.html"
 ]
